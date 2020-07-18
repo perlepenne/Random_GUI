@@ -100,7 +100,7 @@ def random_number_generator():
             start_entry.focus()
             on_start.set(True)
 
-    entries = PhotoImage(file=r"C:\Users\Utente\Desktop\utils\GUI\assets\entries.png")
+    entries = PhotoImage(file="entries.png")
     start_img = Label(root, image=entries, bg="#4f5f76")
     end_img = Label(root, image=entries, bg="#4f5f76")
     start_img.image = entries
@@ -131,7 +131,7 @@ def random_number_generator():
     main_canva.create_window((310, 12), anchor="nw", window=previous)
 
     extract_img = PhotoImage(
-        file=r"C:\Users\Utente\Desktop\utils\GUI\assets\extract.png"
+        file="extract.png"
     )
     button_generate = Button(
         root,
@@ -230,7 +230,7 @@ def random_choice():
     )
 
     word_entry_img = PhotoImage(
-        file=r"C:\Users\Utente\Desktop\utils\GUI\assets\word_entry.png"
+        file="word_entry.png"
     )
     word_entry_label = Label(root, image=word_entry_img, bg="#4f5f76")
     word_entry_label.image = word_entry_img
@@ -240,10 +240,10 @@ def random_choice():
     word_entry.focus()
 
     extract_img = PhotoImage(
-        file=r"C:\Users\Utente\Desktop\utils\GUI\assets\extract.png"
+        file="extract.png"
     )
     go_button_img = PhotoImage(
-        file=r"C:\Users\Utente\Desktop\utils\GUI\assets\confirm_button.png"
+        file="confirm_button.png"
     )
     go_button = Button(
         root,
@@ -271,7 +271,7 @@ def random_choice():
     )
     extract.image = extract_img
     extract_img2 = PhotoImage(
-        file=r"C:\Users\Utente\Desktop\utils\GUI\assets\extract2.png"
+        file="extract2.png"
     )
     shuffle_list_button = Button(
         root,
@@ -314,7 +314,7 @@ main_canva = Canvas(
 )
 main_canva.place(x=155, y=0, anchor="nw")
 
-root.iconbitmap(r"C:\Users\Utente\Desktop\utils\GUI\assets\icon.ico")
+root.iconbitmap("icon.ico")
 root.geometry("650x500+216-116")
 
 root.title("Random Choices")
